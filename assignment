@@ -1,0 +1,33 @@
+CREATE DATABASE assignment;
+
+use assignment
+CREATE TABLE Movies ( 
+name varchar(255),
+actor varchar(255),
+actress varchar(255),
+director varchar(255),
+yearofrelease int
+);
+
+
+
+INSERT INTO Movies (name, actor, actress, director, yearofrelease)
+VALUES ('Pranam','Jagan','Rani','Sugam chandra',2003);
+INSERT INTO Movies (name, actor, actress, director, yearofrelease)
+VALUES ('Rhasyam','Akhil','Kanaka','chandra babu',2014);
+INSERT INTO Movies (name, actor, actress, director, yearofrelease)
+VALUES ('Bhahubali','Prabhas','Anushka','Poori Jagannath',2017);
+INSERT INTO Movies (name, actor, actress, director, yearofrelease)
+VALUES ('Varsham','Arjun','Rakul','Veerababu',1999);
+INSERT INTO Movies (name, actor, actress, director, yearofrelease)
+VALUES ('Kavanam','Pragan','sani','rugam chandra',2003);
+
+
+   
+select * from Movies
+
+
+select name from Movies where actor='Jagan';
+
+select name from Movies where actor in ('Jagan','Pragan')
+
